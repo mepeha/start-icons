@@ -1,0 +1,22 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "sass src/styles.scss src/style.css && postcss src/style.css -o src/style.css",
+    "dev": "concurrently \"sass --watch src/styles.scss:src/style.css\" \"live-server src\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.0.1",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.79.3"
+  }
+}
