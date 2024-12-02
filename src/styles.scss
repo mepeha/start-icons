@@ -359,5 +359,141 @@ a {
 }
 
 
+.have-quest {
+  color: white;
+  padding: 100px 0;
+  background: url("./img/have-question-bg.webp");
+  background-size: cover;
+
+  &__area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__info {
+  }
+
+  &__title {
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 21px;
+  }
+  &__number {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    a {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    a {
+      color: white;
+    }
+  }
+
+  &__button {
+    background-color: white;
+    color: rgb(34, 34, 34);
+  }
+}
+
+
+.footer-block {
+  background: rgb(34, 34, 34);
+  color: white;
+  padding: 107px 0 0;
+  &__area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__col:last-child button{
+
+    align-self: flex-end;
+  }
+  &__col.menu {
+    padding-top: 20px;
+    position: relative;
+
+  }
+  &__col.menu::before {
+    position: absolute;
+    width: 71px;
+    height: 4px;
+    background: rgb(180, 24, 24);
+    content: "";
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: 50%;
+  }
+  &__contact {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 33px 1fr;
+    column-gap: 20px;
+    img {
+      grid-row: span 2;
+    }
+    span {
+      color: rgb(180, 24, 24);
+    }
+    a {
+      color: white;
+      font-size: 17px;
+    }
+  }
+
+  &__button {
+  }
+}
+
+.malevich {
+  color: white;
+  padding: 30px 0;
+  &__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    color: white;
+  }
+
+  &__logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+.container {
+}
+
+
+
+
+
 
 
